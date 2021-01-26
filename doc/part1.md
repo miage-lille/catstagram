@@ -195,7 +195,7 @@ let () = Window.set_onload window run
 ## Exercice 1: 
 
 We only want the implement the rule: **Counter value must be greater than or equal to 3**.
-- modify `update` function to avoid negative counter
+- modify `update` function to avoid counter below 3
 - modify `view` function to disable the button `-` when counter value is 3
 
 >💡 Tip: Why don't use this style <br/>
