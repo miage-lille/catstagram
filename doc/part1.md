@@ -55,7 +55,7 @@ When describing a document in ocaml-vdom we don't write markup. Instead we call 
 let _ = div
         [ input ~a:[type_button; value "-"] []
         ; txt_span (string_of_int 0)
-        ; [ input ~a:[type_button; value "+"] []
+        ; input ~a:[type_button; value "+"] []
         ]
 ```
 
