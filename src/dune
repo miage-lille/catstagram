@@ -1,0 +1,18 @@
+(library
+ (name service)
+ (libraries ocaml-vdom)
+ (modules
+  (:standard \ App)))
+
+(executable
+ (name app)
+ (libraries ocaml-vdom service jsonoo)
+ (modes js)
+ (modules App)
+ (link_flags -no-check-prims))
+
+(rule
+ (targets app.js)
+ (deps app.bc.js)
+ (action
+  (run cp %{deps} %{targets})))

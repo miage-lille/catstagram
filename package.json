@@ -1,0 +1,26 @@
+{
+    "name": "catstagram",
+    "version": "0.0.1",
+    "description": "What would be a world without kitten pictures ?",
+    "license": "MPL-2.0",
+    "scripts": {
+      "start": "open public/index.html"
+    },
+    "dependencies": {
+      "@opam/dune": ">=2.8",
+      "ocaml": "~4.8",
+      "@opam/ocamlformat": "*",
+      "@opam/ocaml-lsp-server": "1.4.0",
+      "@opam/ocaml-vdom": "*", 
+      "@opam/js_of_ocaml": "*",
+      "@opam/js_of_ocaml-ppx": "*",    
+      "@opam/js_of_ocaml-compiler": "*",
+      "@opam/gen_js_api": "*",
+      "@opam/jsonoo": "*"
+    },
+    "devDependencies": {
+    },
+    "esy": {
+      "build": [ "dune build ./src/app.bc.js", "dune build ."]
+    }
+  }
