@@ -8,6 +8,8 @@ Our firts task is to create a simple counter using TEA.
 First point is to define the initial state of our application. In TEA we store the state in the `model`. For a counter its type will be an `int` and inital value `0`
 
 ```ocaml
+open Vdom
+
 type model = int
 let init = 0
 ```
