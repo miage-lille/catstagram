@@ -47,7 +47,7 @@ We want to display 2 buttons and a text:
 ```
 
 This HTML produce the relative DOM:
-![](./dom-counter.png)
+![](../dom-counter.png)
 
 When describing a document in ocaml-vdom we don't write markup. Instead we call functions to create the representation of DOM nodes.
 
